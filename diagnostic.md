@@ -66,14 +66,14 @@ like to show all movies favorited by a profile on
 
 ```sh
 
-A serializer controls what data is returned from a request.
+A serializer controls what data is returned from a request. 
 
 ```
 
 ```rb
 class ProfileSerializer < ActiveModel::Serializer
   attributes :id, :given_name, :surname
-  has_many :favorites
+  has_many :movies
 end
 ```
 
